@@ -26,7 +26,7 @@ def calcular_metricas(faturamento_diario):
     }
 
 def main():
-    caminho_arquivo = os.path.join('calcpercentual', '3', 'faturamento.json')  # Caminho relativo para o arquivo JSON
+    caminho_arquivo = os.path.join('calcpercentual', '3', 'faturamento.json') 
     try:
         dados = ler_dados_json(caminho_arquivo)
         faturamento_diario = dados.get('faturamento_diario', [])
